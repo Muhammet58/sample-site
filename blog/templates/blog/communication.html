@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}| iletişim{% endblock %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'blog/communication.css' %}"> {% endblock %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href=""><h2>Yemek tarifleri</h2></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 my-auto nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}"><h6>Ana sayfa</h6></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'about' %}"><h6>Hakkımızda</h6></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron mt-5">
+  <div class="container">
+    <h1 class="display-4">İletişim Bilgileri :</h1>
+    <hr>
+  </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="max-width: 2000px">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h2 class="card-title"></h2>
+                            <img style="float:left; margin-right: 200px;  margin-bottom: 30px; border:2px solid black; " src="{% static 'img/communication.png' %}" class="img-fluid rounded-start" alt="png yüklenemedi" width="700">
+                            <h5 class="card-text" style="margin-top: 70px;">GSM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; 0555-555-00-00 <br><br>
+                              E-posta &nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; info@gmail.com <br><br>
+                              Facebook&nbsp;&nbsp;&nbsp;: &nbsp; yemek_tarifleri <br><br>
+                              İnstagram&nbsp;&nbsp;: &nbsp; yemektarifleri_00 <br><br>
+                              Twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : &nbsp; yemek_tarifleri_00 <br><br>
+                              Youtube &nbsp;&nbsp;&nbsp; : &nbsp; yemektarifleri_Channel <br><br>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

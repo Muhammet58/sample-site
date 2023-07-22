@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}| Hakkımızda{% endblock %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href=""><h2>Yemek tarifleri</h2></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 my-auto nav-underline">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' %}"><h6>Ana sayfa</h6></a>
+        </li>
+        <li>
+          <a class="nav-link" href="{% url 'communication' %}"><h6>İletişim</h6></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="card" style="max-width: 2000px">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h2 class="card-title">Hakkımızda :</h2>
+                            <hr>
+                            <img style="float:right; margin-left: 20px; margin-top: 20px; margin-bottom: 20px;" src="{% static 'img/about.png' %}" class="img-fluid rounded-start" alt="png yüklenemedi" width="750">
+                            <h5 class="card-text" style="margin-top: 35px;">Adımız bir web sayfasının en altında ilk defa yer aldığından bu yana geçen on beş yıldan sonra kendi hakkımızda söyleyebileceğimiz ilk şey, işimizi severek yaptığımızdır.
+                            Kurumsal cümlelerle şişirilmemiş, bizi olduğu gibi anlatmayı hedefleyen bu metnin temel amacı da, bunun nedeninden ve sonuçlarından bahsetmek.<br><br>
+                            Burada, bilgisayar başında oturan, sürekli beyin fırtınası yapan, yaptığı işe hakim ve detaycı bir ekibiz. Bu durumun, bütün detaylarının önemsendiği, firmanızı tam olarak yansıtacak bir ön yüz tasarımına ve kullanımı tamamen kullanıcıya uyarlanmış bir yönetim panelinin ortaya çıkmasına doğrudan etki ettiğinin farkındayız. Bunu bozmamak için detaycı olmaya özen gösteriyoruz.
+                            Her şeyden önce, en iyi hizmeti vermeye çalışıyoruz. Uzun yıllar sürecek, çözüm odaklı ve hızlı hizmet veren bir çözüm firması olmaya önem veriyoruz ve bunun farkımız olmasını istiyoruz.<br><br>
+                            Yaptığımız işleri beğenmeden ve içimize sinmediği sürece sunmuyoruz. Ekibin her zaman bir yaratıcı fikrinin olmasından, firmanın talep ettiğini değerlendiriyor ve üstüne bizden bir şeyler katmaya çalışıyoruz.
+                            Bu noktada, yıllardır tek işimiz olarak yaptığımız bu işte, doğru olduğuna inandığımız yönteme karşı gelen, müdahale etmeye hevesli müşteriler canımızı sıkan tek şey oluyor. Bu, işinizi sahiplendiğimizden kaynaklı, biliyoruz ama işleriniz istemsizce gecikiyor, sevdiğimiz, heveslendiğimiz projeden uzaklaşıyoruz. İnanın, bize güvendiğinizde ve yaptığımız işe saygı duyduğunuzda harika projelere daha hızlı ve keyifle ulaşıyoruz.
+                            Tüm bunların da tabi ki, 400'den fazla beraber çalıştığımız firma olmasını sağladığını düşünmeden edemiyoruz.
+                            Eğer beğendiyseniz; biz hep buradayız, bir kahve içmeye bekleriz.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
